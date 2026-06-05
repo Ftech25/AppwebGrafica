@@ -1,264 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apegados — Stickers Premium</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-            APEGADOS
-        </a>
+    <!-- PRELOADER -->
+<div id="preloader">
+    <img src="img/LOGO APEGADOS.png" alt="Apegados">
+</div>
 
-        <input type="search" name="Buscador" id="" placeholder="Que buscas?">
+<!-- ── NAVBAR ── -->
+<header>
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="img/LOGO APEGADOS.png" alt="Apegados">
+            </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <input type="search" class="navbar-search d-none d-md-block" placeholder="¿Qué buscás?">
 
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#inicio">Inicio</a>
-                </li>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#productos">Productos</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#catalogo">Catálogo</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">Preguntas Frecuentes</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-    </header>
-    <section class="hero">
-    <div class="container text-center">
-        <h1>Stickers y Cuadros Personalizados</h1>
-        <h2>Diseños Holográficos, Metalizados y Exclusivos</h2>
-        <h3>
-            Calidad premium para decorar, regalar o potenciar tu marca.
-        </h3>
-        <a href="#catalogo" class="btn btn-primary btn-lg mt-2">
-            Ver Catálogo
+    </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section id="inicio" class="hero">
+    <div class="container">
+
+        <h1 class="fw-bold">
+            Stickers Personalizados que Destacan
+        </h1>
+
+        <p class="lead mt-3 mb-4">
+            Holográficos, metalizados y personalizados para emprendedores,<br class="d-none d-md-block">
+            marcas, eventos y fanáticos del diseño.
+        </p>
+
+        <a href="#catalogo" class="btn btn-warning btn-lg me-2 mt-2">Ver Catálogo</a>
+        <a href="https://wa.me/5491156617449" class="btn btn-success btn-lg mt-2" target="_blank">
+            Pedir por WhatsApp
         </a>
     </div>
 </section>
-    <section><h3>Envios</h3>
-    <h3>Medios De Pago</h3>
-    <h3>Atencion Al clientes</h3>
-    </section>
-    <section class="container my-5">
 
-    <div class="text-center mb-4">
-        <h2>Calcos Personalizados</h2>
-        <p>Diseños únicos para tu marca, emprendimiento o proyecto.</p>
+<!-- ── FEATURES ── -->
+<div class="features-bar">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span class="feature-icon">🚚</span>
+                    <h5>Envíos</h5>
+                    <p>A todo el país, rápido y seguro</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span class="feature-icon">✨</span>
+                    <h5>Calidad Premium</h5>
+                    <p>Materiales resistentes al agua</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span class="feature-icon">🎨</span>
+                    <h5>Personalización</h5>
+                    <p>Diseños únicos para tu marca</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <h5>Entrega Rápida</h5>
+                    <p>Producción en tiempo récord</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── STATS ── -->
+<div class="stats">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number">+5K</div>
+                    <div class="stat-label">Pedidos realizados</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Clientes satisfechos</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Años de experiencia</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-box">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Tiempo de respuesta</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── PRODUCTOS ── -->
+<section id="productos" class="container py-5 my-3">
+    <div class="text-center mb-5">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="section-divider"></div>
+        <p class="section-sub mt-3">Encontrá el formato ideal para tu proyecto.</p>
+    </div>
+    <div class="row g-4">
+
+    <!-- Holográficos -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="img/luffyholo.png" class="card-img-top" alt="Stickers Holográficos">
+            <div class="card-body text-center">
+                <span class="badge bg-warning text-dark mb-2">Más Vendido</span>
+                <h5 class="fw-bold">Holográficos</h5>
+                <p class="text-muted">
+                    Efecto arcoíris premium que llama la atención al instante.
+                </p>
+                <a href="https://wa.me/5491156617449" class="btn btn-dark w-100">
+                    Consultar
+                </a>
+            </div>
+        </div>
     </div>
 
-    <div id="carouselCalcos" class="carousel slide" data-bs-ride="carousel">
+    <!-- Vinilo Blanco -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="img/plancha.png" class="card-img-top" alt="Vinilo Blanco">
+            <div class="card-body text-center">
+                <span class="badge bg-primary mb-2">Personalizado</span>
+                <h5 class="fw-bold">Vinilo Base Blanca</h5>
+                <p class="text-muted">
+                    Ideal para logos, emprendimientos y packaging.
+                </p>
+                <a href="https://wa.me/5491156617449" class="btn btn-dark w-100">
+                    Consultar
+                </a>
+            </div>
+        </div>
+    </div>
 
+    <!-- Transparentes -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="img/glitter.png" class="card-img-top" alt="Transparentes">
+            <div class="card-body text-center">
+                <span class="badge bg-success mb-2">Nuevo</span>
+                <h5 class="fw-bold">Vinilo Glitter</h5>
+                <p class="text-muted">
+                    ALERTA Ultra brillantes, Perfectos para vidrios, botellas y superficies lisas.
+                </p>
+                <a href="https://wa.me/5491156617449" class="btn btn-dark w-100">
+                    Consultar
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!-- ── CATÁLOGO ── -->
+
+<section id="catalogo" style="background:#f1f5f9; padding: 80px 0;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Trabajos Realizados</h2>
+            <div class="section-divider"></div>
+            <p class="section-sub mt-3">Algunos de nuestros diseños favoritos.</p>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-4"><img src="img/notebook1.jpg" class="gallery-img"></div>
+            <div class="col-md-4"><img src="img/notebook2.jpg" class="gallery-img"></div>
+            <div class="col-md-4"><img src="img/termo.png" class="gallery-img"></div>
+            <!-- <div class="col-md-4"><img src="img/insta4.jpg" class="gallery-img"></div> -->
+            <!-- <div class="col-md-4"><img src="img/moto.jpg" class="gallery-img"></div>  -->
+            <!-- <div class="col-md-4"><img src="img/calco2.jpg" class="gallery-img"></div> -->
+        </div>
+    </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq" class="container py-5 my-3">
+    <div class="text-center mb-5">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="accordion" id="faqApegados">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#uno">
+                            ¿Hacen diseños personalizados?
+                        </button>
+                    </h2>
+                    <div id="uno" class="accordion-collapse collapse show" data-bs-parent="#faqApegados">
+                        <div class="accordion-body">
+                            Sí. Podés enviarnos tu idea, logo o referencia y nuestro equipo lo ilustra y adapta para producción.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dos">
+                            ¿Realizan envíos?
+                        </button>
+                    </h2>
+                    <div id="dos" class="accordion-collapse collapse" data-bs-parent="#faqApegados">
+                        <div class="accordion-body">
+                            Realizamos envíos a toda Argentina con los principales correos del país.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tres">
+                            ¿Cuánto tarda la producción?
+                        </button>
+                    </h2>
+                    <div id="tres" class="accordion-collapse collapse" data-bs-parent="#faqApegados">
+                        <div class="accordion-body">
+                            El tiempo promedio es de 5 a 7 días hábiles según cantidad y tipo de sticker. Para urgencias, consultanos.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#cuatro">
+                            ¿Son resistentes al agua?
+                        </button>
+                    </h2>
+                    <div id="cuatro" class="accordion-collapse collapse" data-bs-parent="#faqApegados">
+                        <div class="accordion-body">
+                            Sí. Todos nuestros stickers están fabricados con materiales vinílicos impermeables, resistentes al agua, al sol y al roce diario.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CAROUSEL CALCOS ── -->
+<section class="container-fluid px-0 my-0">
+    <div id="carouselCalcos" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselCalcos" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#carouselCalcos" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#carouselCalcos" data-bs-slide-to="2"></button>
         </div>
-
         <div class="carousel-inner">
-
             <div class="carousel-item active">
-                <img src="img/calco1.jpg" class="d-block w-100" alt="Calcos holográficos">
+                <!-- <img src="img/calco1.jpg" class="d-block w-100" alt="Calcos holográficos"> -->
                 <div class="carousel-caption">
                     <h3>Calcos Holográficos</h3>
                     <p>Brillo premium y acabado profesional.</p>
                 </div>
             </div>
-
             <div class="carousel-item">
-                <img src="img/calco2.jpg" class="d-block w-100" alt="Calcos personalizados">
+                <!-- <img src="img/calco2.jpg" class="d-block w-100" alt="Calcos personalizados"> -->
                 <div class="carousel-caption">
                     <h3>Diseños Personalizados</h3>
                     <p>Adaptados a tu marca o emprendimiento.</p>
                 </div>
             </div>
-
             <div class="carousel-item">
-                <img src="img/calco3.jpg" class="d-block w-100" alt="Calcos metalizados">
+                <!-- <img src="img/calco3.jpg" class="d-block w-100" alt="Calcos metalizados"> -->
                 <div class="carousel-caption">
                     <h3>Acabado Metalizado</h3>
                     <p>Ideal para logos y etiquetas premium.</p>
                 </div>
             </div>
-
         </div>
-
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCalcos" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
-
         <button class="carousel-control-next" type="button" data-bs-target="#carouselCalcos" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
-
     </div>
 </section>
-    <section class="container py-5">
 
-    <div class="row align-items-center">
-
-        <div class="col-lg-6">
-            <h2 class="fw-bold mb-4">
-                Diseñados para durar
-            </h2>
-
-            <p class="lead">
-                Nuestros stickers están fabricados con materiales de alta calidad,
-                resistentes al agua, al desgaste y a las condiciones del uso diario.
-            </p>
-
-            <p>
-                Son ideales para notebooks, termos, botellas, vehículos,
-                vidrieras y cualquier superficie donde necesites una impresión
-                duradera y con colores vibrantes.
-            </p>
-
-            <ul class="list-unstyled">
-                <li>✔ Resistentes al agua</li>
-                <li>✔ Material vinílico premium</li>
-                <li>✔ Colores de larga duración</li>
-                <li>✔ Uso interior y exterior</li>
-                <li>✔ Acabados holográficos y metalizados</li>
-            </ul>
-
-            <a href="#catalogo" class="btn btn-dark mt-3">
-                Ver Productos
-            </a>
-        </div>
-
-        <div class="col-lg-6 text-center">
-            <img
-                src="img/sticker-agua.jpg"
-                class="img-fluid rounded shadow"
-                alt="Sticker resistente al agua">
+<!-- ── DISEÑADOS PARA DURAR ── -->
+<section class="durabilidad-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Diseñados para durar</h2>
+                <p class="text-muted mb-4">
+                    Fabricados con materiales vinílicos de alta calidad, resistentes al agua,
+                    al desgaste y a las condiciones del uso diario. Ideales para notebooks,
+                    termos, botellas, vehículos y cualquier superficie.
+                </p>
+                <ul class="list-unstyled check-list">
+                    <li>Resistentes al agua y al sol</li>
+                    <li>Material vinílico premium</li>
+                    <li>Colores vibrantes de larga duración</li>
+                    <li>Uso interior y exterior</li>
+                    <li>Acabados holográficos y metalizados</li>
+                </ul>
+                <a href="#catalogo" class="btn btn-warning btn-lg mt-3 fw-bold">Ver Productos</a>
+            </div>
+            <div class="col-lg-6">
+                <!-- <img src="img/sticker-agua.jpg" class="img-fluid" alt="Sticker resistente al agua"> -->
+            </div>
         </div>
     </div>
-    <div class="col-lg-6">
-
-    <video
-        class="w-100 rounded shadow"
-        autoplay
-        muted
-        loop
-        playsinline>
-
-        <source src="video/sticker-agua.mp4" type="video/mp4">
-
-    </video>
-
-</div>
 </section>
-    <section class="instagram-section py-5">
 
+<!-- ── INSTAGRAM ── -->
+<section class="instagram-section" id="contacto">
     <div class="container text-center">
+        <h2 class="fw-bold mb-2">Seguinos en Instagram</h2>
+        <div class="section-divider"></div>
+        <p class="text-muted mt-3 mb-4">Descubrí nuestros últimos trabajos, diseños exclusivos y novedades.</p>
 
-        <h2 class="fw-bold mb-3">
-            Seguinos en Instagram
-        </h2>
-
-        <p class="mb-4">
-            Descubrí nuestros últimos trabajos, diseños exclusivos y novedades.
-        </p>
-
-        <a href="https://instagram.com/TU_USUARIO"
-           target="_blank"
-           class="btn btn-dark btn-lg">
-            📸 @TU_USUARIO
+        <a href="https://instagram.com/TU_USUARIO" target="_blank" class="btn btn-dark btn-lg fw-bold">
+            📸 @ApegadosStickers
         </a>
 
-        <div class="row mt-5 g-3">
-
-            <div class="col-6 col-md-3">
-                <img src="img/insta1.jpg" class="img-fluid rounded shadow" alt="">
-            </div>
-
-            <div class="col-6 col-md-3">
-                <img src="img/insta2.jpg" class="img-fluid rounded shadow" alt="">
-            </div>
-
-            <div class="col-6 col-md-3">
-                <img src="img/insta3.jpg" class="img-fluid rounded shadow" alt="">
-            </div>
-
-            <div class="col-6 col-md-3">
-                <img src="img/insta4.jpg" class="img-fluid rounded shadow" alt="">
-            </div>
-
+        <div class="row mt-4 g-3 insta-grid">
+            <!-- <div class="col-6 col-md-3"><img src="img/notebook1.jpg" alt=""></div>
+            <div class="col-6 col-md-3"><img src="img/notebook2.jpg" alt=""></div>
+            <div class="col-6 col-md-3"><img src="img/notebook3.jpg" alt=""></div>
+            <div class="col-6 col-md-3"><img src="img/notebook4.jpg" alt=""></div> -->
         </div>
-
     </div>
-
 </section>
-    <footer class="footer py-4">
 
+<!-- ── FOOTER ── -->
+<footer>
     <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-4 mb-3">
-                <h5>✨ StickerLab</h5>
-                <p>
-                    Stickers personalizados, holográficos y metalizados
-                    con calidad premium.
-                </p>
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="footer-brand">APEGADOS</div>
+                <p>Stickers personalizados de alta calidad para marcas, emprendedores y creativos de toda Argentina.</p>
             </div>
-
-            <div class="col-md-4 mb-3">
-                <h5>Enlaces</h5>
-
-                <ul class="list-unstyled">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#catalogo">Catálogo</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+            <div class="col-6 col-lg-2 offset-lg-2">
+                <p class="footer-heading">Navegación</p>
+                <a href="#inicio" class="d-block mb-2">Inicio</a>
+                <a href="#productos" class="d-block mb-2">Productos</a>
+                <a href="#catalogo" class="d-block mb-2">Catálogo</a>
+                <a href="#faq" class="d-block mb-2">FAQ</a>
             </div>
-
-            <div class="col-md-4 mb-3">
-                <h5>Contacto</h5>
-
-                <p>📱 WhatsApp: +54 9 1156617449</p>
-                <p>📧 contacto@stickerlab.com</p>
-                <p>📍 Buenos Aires, Argentina</p>
+            <div class="col-6 col-lg-2">
+                <p class="footer-heading">Contacto</p>
+                <a href="https://wa.me/5491156617449" class="d-block mb-2" target="_blank">WhatsApp</a>
+                <a href="https://instagram.com/TU_USUARIO" class="d-block mb-2" target="_blank">Instagram</a>
             </div>
-
+            <div class="col-lg-2">
+                <p class="footer-heading">Productos</p>
+                <a href="#productos" class="d-block mb-2">Holográficos</a>
+                <a href="#productos" class="d-block mb-2">Personalizados</a>
+                <a href="#productos" class="d-block mb-2">Metalizados</a>
+            </div>
         </div>
-
         <hr>
-
-        <div class="text-center">
-            © 2026 StickerLab - Todos los derechos reservados.
-        </div>
-
+        <p class="copy text-center mb-0">© 2025 Apegados · Todos los derechos reservados · Hecho con ❤️ en Argentina</p>
     </div>
-
 </footer>
-    <script></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ── WHATSAPP ── -->
+<a href="https://wa.me/5491156617449" class="whatsapp" target="_blank" title="Chatear por WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
